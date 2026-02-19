@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SÍLABO MAE NM 2026 - Año 12°</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        .gradient-header {
+            background: linear-gradient(90deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
+        }
+
+        .header-tag {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(4px);
+            padding: 4px 16px;
+            border-radius: 9999px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        .topic-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-left: 4px solid transparent;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-2px);
+            border-left-color: #3b82f6;
+            background-color: #f8fafc;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .ib-tag {
+            font-size: 7.5px;
+            font-weight: 800;
+            background: #e2e8f0;
+            padding: 1px 4px;
+            border-radius: 3px;
+            color: #1e293b;
+            margin-right: 4px;
+            display: inline-block;
+        }
+
+        .resource-link {
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 600;
+            color: #475569;
+            text-decoration: none;
+        }
+
+        .resource-link:hover {
+            background: #f8fafc;
+            border-color: #3b82f6;
+            color: #3b82f6;
+            transform: translateX(4px);
+        }
+
+        .timeline-dot {
+            position: relative;
+        }
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            left: -21px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: #3b82f6;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+            padding: 2px 0;
+            line-height: 1.3;
+        }
+        
+        .check-item input[type="checkbox"] {
+            accent-color: #3b82f6;
+            margin-top: 3px;
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    </style>
+</head>
+<body class="p-2 md:p-8">
+
+    <div class="max-w-7xl mx-auto bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100">
+        
+        <!-- Header Principal -->
+        <div class="gradient-header p-10 md:p-14 text-white relative">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <div class="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
+                        <div class="header-tag">Colegios VCSP</div>
+                        <div class="header-tag bg-blue-500/20 border-blue-400/30">Bachillerato Internacional 2026</div>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter leading-none mb-4">
+                        MAE NM: AÑO 12°
+                    </h1>
+                    <p class="text-blue-100 text-lg md:text-xl font-light italic opacity-90">
+                        SÍLABO BIANUAL: Consolidación y Desarrollo Final
+                    </p>
+                </div>
+                
+                <div class="bg-white/10 border border-white/20 rounded-2xl p-6 text-center backdrop-blur-sm">
+                    <p class="text-[10px] uppercase opacity-70 tracking-[0.2em] font-bold mb-1">Docente Responsable</p>
+                    <p class="text-2xl md:text-3xl font-bold tracking-tight mb-2">Javier Trigoso</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+            
+            <!-- Sidebar Izquierda: PRERREQUISITOS AÑO 11 -->
+            <div class="lg:col-span-3 p-6 bg-slate-50 border-r border-gray-200 overflow-y-auto max-h-[1000px]">
+                <h2 class="text-xs font-black text-slate-500 uppercase tracking-widest mb-6 flex items-center italic">
+                    <i class="fa-solid fa-clock-rotate-left mr-2 text-blue-600"></i> Repaso Prerrequisitos
+                </h2>
+                
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
+                        <h4 class="text-[10px] font-black text-blue-700 uppercase mb-2 border-b border-blue-50 pb-1 italic">U1 - U4: Álgebra</h4>
+                        <div class="space-y-1">
+                            <label class="check-item text-[9px]"><input type="checkbox"> <span><span class="ib-tag">NM 1.1-4</span> Sucesiones y Finanzas.</span></label>
+                            <label class="check-item text-[9px]"><input type="checkbox"> <span><span class="ib-tag">NM 1.8-9</span> Binomio y Series Infinitas.</span></label>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
+                        <h4 class="text-[10px] font-black text-indigo-700 uppercase mb-2 border-b border-indigo-50 pb-1 italic">U2, U6-U8: Modelización</h4>
+                        <div class="space-y-1">
+                            <label class="check-item text-[9px]"><input type="checkbox"> <span><span class="ib-tag">NM 2.1-7</span> Funciones Base.</span></label>
+                            <label class="check-item text-[9px]"><input type="checkbox"> <span><span class="ib-tag">NM 2.8-11</span> Trascendentes.</span></label>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
+                        <h4 class="text-[10px] font-black text-rose-700 uppercase mb-2 border-b border-rose-50 pb-1 italic">U5 & U9: Geometría</h4>
+                        <div class="space-y-1">
+                            <label class="check-item text-[9px]"><input type="checkbox"> <span><span class="ib-tag">NM 3.1-3</span> Trig. Plana y 3D.</span></label>
+                            <label class="check-item text-[9px]"><input type="checkbox"> <span><span class="ib-tag">NM 3.4-8</span> Círculo y Ec. Trig.</span></label>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
+                        <h4 class="text-[10px] font-black text-emerald-700 uppercase mb-2 border-b border-emerald-50 pb-1 italic">U3 & U10: Estadística</h4>
+                        <div class="space-y-1">
+                            <label class="check-item text-[9px]"><input type="checkbox"> <span><span class="ib-tag">NM 4.1-3</span> Datos Unidim.</span></label>
+                            <label class="check-item text-[9px]"><input type="checkbox"> <span><span class="ib-tag">NM 4.4, 4.10</span> Regresiones.</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NUEVO: TIPS DE ÉXITO -->
+                <div class="mt-8 p-4 bg-blue-600 rounded-3xl text-white">
+                    <h3 class="text-[10px] font-black uppercase mb-3 italic tracking-widest text-blue-200">Habilidades MAE</h3>
+                    <ul class="text-[9px] space-y-2 font-medium italic">
+                        <li class="flex gap-2"><i class="fa-solid fa-bolt text-amber-400"></i> No dejes el procedimiento en blanco.</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-bolt text-amber-400"></i> Muestra el "Setup" de la GDC.</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-bolt text-amber-400"></i> Usa siempre 3 Cifras Significativas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Centro: PROGRAMA AÑO 12 -->
+            <div class="lg:col-span-6 p-8 border-r border-gray-100 overflow-y-auto max-h-[1000px]">
+                <div class="flex items-center justify-between mb-8 border-b pb-4">
+                    <div>
+                        <h2 class="text-2xl font-black text-slate-800 uppercase italic">Programa Año 12°</h2>
+                        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest italic">Unidades 11 a 15: Cierre 2026</p>
+                    </div>
+                </div>
+
+                <div class="space-y-8 relative ml-4">
+                    <div class="absolute left-[-17px] top-0 bottom-0 w-px bg-slate-200"></div>
+
+                    <section class="timeline-dot">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="bg-amber-100 text-amber-700 text-[9px] font-black px-2 py-0.5 rounded uppercase">Marzo - Mayo</span>
+                            <h3 class="text-xs font-black text-amber-600 uppercase italic tracking-wider">I Trimestre: Probabilidades y Límites</h3>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="topic-card bg-emerald-50 p-4 rounded-2xl border border-emerald-100 shadow-sm">
+                                <h4 class="font-bold text-emerald-900 text-[10px] uppercase mb-2">U11: Aleatoriedad</h4>
+                                <p class="text-[9px] text-emerald-800/80 italic">Diagramas de Venn, Árbol y Probabilidad Condicionada <span class="ib-tag">NM 4.5, 4.11</span></p>
+                            </div>
+                            <div class="topic-card bg-indigo-50 p-4 rounded-2xl border border-indigo-100 shadow-sm">
+                                <h4 class="font-bold text-indigo-900 text-[10px] uppercase mb-2">U12: Derivación I</h4>
+                                <p class="text-[9px] text-indigo-800/80 italic">Límites, Razón de cambio y Rectas Tangentes <span class="ib-tag">NM 5.1-4</span></p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="timeline-dot">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-700 text-[9px] font-black px-2 py-0.5 rounded uppercase">Junio - Agosto</span>
+                            <h3 class="text-xs font-black text-indigo-600 uppercase italic tracking-wider">II Trimestre: Cálculo Avanzado</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="topic-card bg-indigo-50/50 p-5 rounded-2xl border border-indigo-200 shadow-sm">
+                                <h4 class="font-bold text-indigo-900 text-[11px] uppercase mb-2">U13: Derivación II y Optimización</h4>
+                                <p class="text-[10px] text-indigo-800/80 italic">Reglas de producto/cociente, Puntos de inflexión y Cinemática <span class="ib-tag">NM 5.6-9</span></p>
+                            </div>
+                            <div class="topic-card bg-slate-100 p-5 rounded-2xl border border-slate-200 shadow-sm">
+                                <h4 class="font-bold text-slate-900 text-[11px] uppercase mb-2">U14: Integración</h4>
+                                <p class="text-[10px] text-slate-800/80 italic">Integrales definidas e indefinidas, Áreas entre curvas y sustitución <span class="ib-tag">NM 5.10-11</span></p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="timeline-dot">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="bg-rose-100 text-rose-700 text-[9px] font-black px-2 py-0.5 rounded uppercase">Setiembre - Octubre</span>
+                            <h3 class="text-xs font-black text-rose-600 uppercase italic tracking-wider">III Trimestre: Distribuciones</h3>
+                        </div>
+                        <div class="topic-card bg-rose-50 p-5 rounded-2xl border border-rose-100 shadow-sm">
+                            <h4 class="font-bold text-rose-900 text-[11px] uppercase mb-2">U15: Distribuciones Normal y Binomial</h4>
+                            <p class="text-[10px] text-rose-800/80 italic">Esperanza matemática, Valores Z y procesos inversos <span class="ib-tag">NM 4.7-12</span></p>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- NUEVO: GDC SKILLS -->
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 border-2 border-dashed border-slate-200 rounded-3xl">
+                        <h4 class="text-[10px] font-black text-slate-400 uppercase italic mb-2">Destrezas GDC (P2)</h4>
+                        <div class="space-y-1 text-[9px] text-slate-500 font-semibold italic">
+                            <p>• Solver para ecuaciones complejas.</p>
+                            <p>• Integrales y derivadas en punto.</p>
+                            <p>• Menú STAT: Binomial y Normal.</p>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-slate-900 rounded-3xl text-white flex flex-col justify-center">
+                        <p class="text-[8px] font-bold text-blue-400 uppercase italic">Importante</p>
+                        <p class="text-[10px] font-light italic">"La GDC es una herramienta, no un reemplazo del razonamiento analítico."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Derecha: RECURSOS Y METAS -->
+            <div class="lg:col-span-3 p-8 bg-slate-50 space-y-6 overflow-y-auto max-h-[1000px]">
+                
+                <!-- RECURSOS IB -->
+                <div class="space-y-3">
+                    <h3 class="text-[10px] font-black text-slate-500 uppercase tracking-widest italic flex items-center">
+                        <i class="fa-solid fa-link mr-2 text-blue-500"></i> Recursos IB
+                    </h3>
+                    <div class="grid grid-cols-1 gap-1.5">
+                        <a href="https://www.revisionvillage.com/" target="_blank" class="resource-link">Revision Village</a>
+                        <a href="https://kognity.com/" target="_blank" class="resource-link">Kognity</a>
+                        <a href="https://www.paperplainz.com/" target="_blank" class="resource-link">Paper Plainz</a>
+                        <a href="https://studyib.net/" target="_blank" class="resource-link">StudyIB</a>
+                        <a href="https://www.mrmacmaths.com/" target="_blank" class="resource-link">Mr. MacMaths</a>
+                        <a href="https://www.youtube.com/@descifrandoalib" target="_blank" class="resource-link">Descifrando al IB</a>
+                        <a href="https://www.mymathscloud.com/" target="_blank" class="resource-link">My Maths Cloud</a>
+                        <a href="https://www.clastify.com/" target="_blank" class="resource-link">Clastify</a>
+                        <a href="https://sites.google.com/concordian.ac.th/ib-math-resources/" target="_blank" class="resource-link">Concordian Int. School</a>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-[2rem] bg-gradient-to-b from-amber-50 to-amber-100 border-2 border-amber-200 shadow-sm">
+                    <h2 class="text-amber-800 font-black text-[10px] uppercase mb-3 italic">IA: Exploración</h2>
+                    <p class="text-[9px] text-amber-700 italic leading-tight">Entrega final: Setiembre 2026. Enfoque: Modelización y Análisis Crítico.</p>
+                </div>
+
+                <div class="pt-6 border-t border-slate-200 text-center">
+                    <div class="bg-blue-900 text-white p-5 rounded-[2rem] shadow-xl">
+                        <p class="text-[9px] uppercase font-bold text-blue-300 italic mb-1">Exámenes IB</p>
+                        <p class="text-xl font-black italic">NOV 2026</p>
+                    </div>
+                    <div class="mt-4 flex gap-1">
+                        <div class="flex-1 text-[7px] font-bold p-2 bg-slate-200 rounded-lg uppercase">P1: No GDC</div>
+                        <div class="flex-1 text-[7px] font-bold p-2 bg-slate-200 rounded-lg uppercase">P2: GDC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white border-t border-slate-100 p-4 flex flex-col md:flex-row justify-between items-center px-10">
+            <p class="text-blue-600 text-[9px] font-black uppercase tracking-wider italic">Análisis y Enfoques NM | Javier Trigoso</p>
+            <div class="text-slate-300 text-[8px] font-black italic uppercase tracking-[0.2em]">VCSP 2026</div>
+        </div>
+    </div>
+
+</body>
+</html>
